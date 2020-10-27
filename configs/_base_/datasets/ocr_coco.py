@@ -1,0 +1,16 @@
+_base_ = 'coco_detection.py'
+classes = 'C:/Users/akmalul-khairi.nazar/Desktop/datasets/3/classes.txt'
+data_root = 'C:/Users/akmalul-khairi.nazar/Desktop/datasets/' 
+data = dict(
+    train=dict(
+        ann_file=data_root + '3/train.json',
+        img_prefix=data_root + 'train/',
+        classes=classes),
+    val=dict(
+        ann_file=data_root + '3/validate.json',
+        img_prefix=data_root + 'validate/',
+        classes=classes),
+    test=dict(
+        ann_file=data_root + '3/test.json',
+        img_prefix=data_root + 'test/',
+        classes=classes))
